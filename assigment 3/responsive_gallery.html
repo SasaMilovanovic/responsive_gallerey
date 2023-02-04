@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Gallery</title>
+
+    <style>
+        * {
+            box-sizing: 0;
+        }
+
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            margin: 0;
+        }
+
+        .thumb {
+            width: 140px;
+            border: 1px solid rgb(15, 134, 238);
+            border-radius: 8px;
+            overflow: hidden;
+
+        }
+
+
+
+        .thumb-background {
+            height: 100px;
+            background-color: rgb(15, 134, 238);
+            background-image: url(./placeholder-image.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+
+        .thumb-text {
+            font-size: 10px;
+            margin: 8px 0px;
+            overflow: hidden;
+            text-align: center;
+        }
+
+        header {
+            display: flexbox;
+        }
+
+        main {
+            display: flexbox;
+        }
+
+        footer {
+            display: flexbox;
+        }
+
+        @media all and (max-width: 480px) {
+
+
+            h1 {
+                text-align: center;
+            }
+
+            p {
+
+                text-align: center;
+                padding: 10px;
+            }
+
+            #thumbnail {
+                column-gap: 15px;
+                padding: 8px;
+            }
+
+            .thumb {
+                width: 140px;
+                margin: 0 auto;
+                margin-bottom: 50px;
+            }
+        }
+
+        @media all and (min-width: 481px) and (max-width: 990px) {
+
+            header {
+                padding-top: 50px;
+            }
+
+            h1 {
+                font-size: 1.9em;
+                text-align: left;
+                margin-left: 50px;
+
+            }
+
+            p {
+                font-size: 1.1em;
+                text-align: left;
+                margin: 50px;
+            }
+
+            main {
+                padding: 30px;
+                display: flexbox;
+                margin: 0 auto;
+                
+
+            }
+
+            .thumbnail {
+                margin: 0 auto;
+                justify-content: space-around;
+            }
+
+            .thumb {
+
+                margin: 8px;
+                display: inline-block;
+            }
+        }
+
+        @media all and (min-width: 991px) {
+            header {
+                padding-top: 50px;
+            }
+
+            h1 {
+                font-size: 1.9em;
+                text-align: left;
+                margin-left: 50px;
+
+            }
+
+            p {
+                font-size: 1.1em;
+                text-align: left;
+                margin: 50px;
+            }
+
+            
+            main {
+                padding: 30px;
+                display: flexbox;
+                margin: 0 auto;
+                
+
+            }
+
+            .thumbnail {
+
+                justify-content: space-around;
+                flex-wrap: wrap;
+            }
+
+            .thumb {
+                
+                margin: 20px;
+                display: inline-block;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Gallery Heading</h1>
+    </header>
+    <main>
+        <div id="thumbnails">
+
+            <div class="thumb">
+                <div class="thumb-background"></div>
+                <div class="thumb-text">Image title 1</div>
+            </div>
+
+            <div class="thumb">
+                <div class="thumb-background"></div>
+                <div class="thumb-text">Image title 2</div>
+            </div>
+
+            <div class="thumb">
+                <div class="thumb-background"></div>
+                <div class="thumb-text">Image title 3</div>
+            </div>
+
+            <div class="thumb">
+                <div class="thumb-background"></div>
+                <div class="thumb-text">Image title 4</div>
+            </div>
+
+            <div class="thumb">
+                <div class="thumb-background"></div>
+                <div class="thumb-text">Image title 5</div>
+            </div>
+
+            <div class="thumb">
+                <div class="thumb-background"></div>
+                <div class="thumb-text">Image title 6</div>
+            </div>
+
+            <div class="thumb">
+                <div class="thumb-background"></div>
+                <div class="thumb-text">Image title 7</div>
+            </div>
+
+            <div class="thumb">
+                <div class="thumb-background"></div>
+                <div class="thumb-text">Image title 8</div>
+            </div>
+
+            <div class="thumb">
+                <div class="thumb-background"></div>
+                <div class="thumb-text">Image title 9</div>
+            </div>
+
+            <div class="thumb">
+                <div class="thumb-background"></div>
+                <div class="thumb-text">Image title 10</div>
+            </div>
+        </div>
+    </main>
+
+    <footer></footer>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua.
+        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+        laborum.</p>
+    </footer>
+</body>
+
+</html>
